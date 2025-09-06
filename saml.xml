@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
-                  entityID="https://evil-idp.attacker.com/">
+                  entityID="https://lod1yk9pj0agasntskwr5366bxhp5gt5.oastify.com">
     <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-                             Location="http://169.254.169.254/sso"/>
+        <SingleSignOnService
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+            Location="http://lod1yk9pj0agasntskwr5366bxhp5gt5.oastify.com"/>
     </IDPSSODescriptor>
 </EntityDescriptor>
