@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
-                  entityID="https://example-idp.com/metadata">
+                  entityID="https://evil-idp.attacker.com/">
     <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-        <KeyDescriptor use="signing">
-            <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
-                <X509Data>
-                    <X509Certificate>
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnm2vZyK1+bFhZ5v8T3x8
-p7x5L3Jv1G9Jv6g+z6U3vCh5LqP2H8/6yfKb1t8X8F7QvZKlU+YJhWQdM1Hjz5hC
-lV+7H3Z6KxC6+8c4XlFq0l+2Y7Prm+3d8bGvM9O0LpN0q8/6OtzjQwIDAQAB
-                    </X509Certificate>
-                </X509Data>
-            </KeyInfo>
-        </KeyDescriptor>
-        <SingleSignOnService
-            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-            Location="https://example-idp.com/sso"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                             Location="http://169.254.169.254/sso"/>
     </IDPSSODescriptor>
 </EntityDescriptor>
