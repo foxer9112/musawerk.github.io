@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                  entityID="https://dvct5cghqsh8hkulzc3jcvdyipohc90y.oastify.com">
+    <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <SingleSignOnService
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+            Location="http://dvct5cghqsh8hkulzc3jcvdyipohc90y.oastify.com"/>
+    </IDPSSODescriptor>
+</EntityDescriptor>
